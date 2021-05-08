@@ -1,0 +1,55 @@
+{
+  
+ courses{
+  id, 
+  description,
+  teacher {id}
+   
+}
+}
+
+
+////////////////////result 
+
+{
+  "data": {
+    "courses": [
+      {
+        "id": "1",
+        "description": "123",
+        "teacher": {
+          "id": "1"
+        }
+      },
+      {
+        "id": "2",
+        "description": "teach art",
+        "teacher": {
+          "id": "2"
+        }
+      }
+    ]
+  }
+}
+-------------------------------------------------------------------
+
+
+{
+  
+ teacher(id: 1){
+  id, 
+  first
+   
+}
+}
+/////////////////////////////////////////////////////
+result 
+
+{
+  "data": {
+    "teacher": {
+      "id": "1",
+      "first": "Luke"
+    }
+  }
+}
